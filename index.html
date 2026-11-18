@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Bulls Paradise | Official Telegram</title>
+<title>The Bulls Paradise</title>
 
 <style>
 * {
@@ -14,11 +15,11 @@
 
 body {
     min-height: 100vh;
-    background: #050a12;
+    background: #080a10;
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding: 30px 15px;
     color: white;
 }
@@ -26,109 +27,108 @@ body {
 .container {
     width: 100%;
     max-width: 620px;
-    min-height: 1050px;
-    padding: 65px 35px 40px;
+    padding: 65px 35px;
     text-align: center;
-    background: linear-gradient(145deg, #101c2b, #080d16);
-    border: 1px solid rgba(56,189,248,0.35);
+    background: linear-gradient(145deg, #171a24, #10131c);
+    border: 1px solid rgba(218,190,75,0.3);
     border-radius: 45px;
-    box-shadow: 0 0 35px rgba(56,189,248,0.12);
+    box-shadow: 0 0 35px rgba(0,0,0,0.5);
 }
 
-/* LOGO */
+/* HERO IMAGE */
 
-.logo {
-    width: 210px;
-    height: 210px;
-    margin: 15px auto 45px;
+.hero-image {
+    width: 220px;
+    height: 220px;
+    margin: 10px auto 40px;
     border-radius: 50%;
-    background: #03070d;
-    border: 7px solid #38bdf8;
-    box-shadow: 0 0 35px rgba(56,189,248,0.5);
+    border: 6px solid #d9b83e;
+    background: radial-gradient(circle, #171a20, #000);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    box-shadow: 0 0 45px rgba(218,190,75,0.25);
+    overflow: hidden;
 }
 
-.logo-icon {
-    font-size: 65px;
-    color: #38bdf8;
-    line-height: 1;
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.logo-text {
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 12px;
-    letter-spacing: 1px;
-}
-
-/* HEADING */
+/* BRAND */
 
 h1 {
     font-size: 43px;
-    color: #38bdf8;
-    margin-bottom: 12px;
+    color: #e6c64e;
     font-weight: 800;
+    margin-bottom: 12px;
 }
 
 .subtitle {
-    color: #aab6c5;
-    font-size: 23px;
-    letter-spacing: 2px;
+    font-size: 22px;
+    color: #a4a6b1;
+    letter-spacing: 1.5px;
     margin-bottom: 25px;
 }
 
 .description {
     font-size: 23px;
+    color: #e0e0e5;
     line-height: 1.6;
-    color: #e2e8f0;
     margin: 20px 0 45px;
 }
 
 .dot {
-    color: #38bdf8;
-    font-size: 25px;
+    color: #e6c64e;
     padding: 0 8px;
 }
 
-/* JOIN TEXT */
+/* JOIN SECTION */
 
 .join-text {
-    color: #aab6c5;
-    font-size: 23px;
+    font-size: 22px;
+    color: #a5a7b1;
     margin-bottom: 28px;
 }
 
-/* BUTTON */
+/* ONLY BLUE GLOW BUTTON */
 
 .join-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
     width: 100%;
     max-width: 450px;
     margin: auto;
     padding: 25px 15px;
-    background: linear-gradient(135deg, #38bdf8, #0284c7);
-    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    background: linear-gradient(135deg, #8be0ff, #38bdf8);
+    color: #06121b;
     text-decoration: none;
-    color: #03111d;
     font-size: 27px;
     font-weight: bold;
-    box-shadow: 0 0 30px rgba(56,189,248,0.3);
-    transition: 0.3s;
+    border-radius: 24px;
+
+    box-shadow:
+        0 0 15px rgba(56,189,248,0.5),
+        0 0 35px rgba(56,189,248,0.3);
+
+    transition: 0.3s ease;
 }
 
 .join-btn:hover {
     transform: translateY(-4px);
-    box-shadow: 0 0 45px rgba(56,189,248,0.6);
+    box-shadow:
+        0 0 20px rgba(56,189,248,0.8),
+        0 0 55px rgba(56,189,248,0.6);
 }
 
 .telegram-icon {
-    font-size: 32px;
+    font-size: 30px;
 }
 
 /* COUNTDOWN */
@@ -136,11 +136,11 @@ h1 {
 .countdown {
     margin: 35px 0;
     font-size: 21px;
-    color: #aab6c5;
+    color: #a4a6b1;
 }
 
 #timer {
-    color: #38bdf8;
+    color: #e6c64e;
     font-weight: bold;
 }
 
@@ -150,16 +150,16 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 14px;
     margin: 40px 0;
 }
 
 .feature {
-    padding: 13px 23px;
-    border: 1px solid #334155;
+    background: #222630;
+    border: 1px solid #343945;
+    color: #c4c6cf;
+    padding: 13px 22px;
     border-radius: 30px;
-    color: #cbd5e1;
-    background: #182333;
     font-size: 17px;
 }
 
@@ -167,12 +167,12 @@ h1 {
 
 hr {
     border: none;
-    border-top: 1px solid #263548;
+    border-top: 1px solid #30343d;
     margin: 50px 0 35px;
 }
 
 .footer {
-    color: #8995a5;
+    color: #858995;
     font-size: 17px;
     line-height: 1.7;
 }
@@ -185,14 +185,13 @@ hr {
 
 @media(max-width: 500px) {
     .container {
-        padding: 50px 22px 35px;
-        min-height: auto;
+        padding: 50px 22px;
         border-radius: 35px;
     }
 
-    .logo {
-        width: 175px;
-        height: 175px;
+    .hero-image {
+        width: 180px;
+        height: 180px;
         margin-bottom: 40px;
     }
 
@@ -208,12 +207,8 @@ hr {
         font-size: 19px;
     }
 
-    .join-text {
-        font-size: 19px;
-    }
-
     .join-btn {
-        font-size: 21px;
+        font-size: 22px;
         padding: 22px 10px;
     }
 
@@ -227,22 +222,36 @@ hr {
     }
 }
 </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2870254103367998');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2870254103367998&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
 
 <div class="container">
 
-    <!-- LOGO -->
-    <div class="logo">
-        <div class="logo-icon">♟</div>
-        <div class="logo-text">
-            BULLS<br>PARADISE
-        </div>
+    <!-- HERO IMAGE -->
+    <div class="hero-image">
+        <img src="bulls-logo.png" alt="The Bulls Paradise Logo">
     </div>
 
     <!-- BRAND NAME -->
-    <h1>The Bulls Paradise</h1>
+    <h1>Trade with SUDARSHAN</h1>
 
     <div class="subtitle">
         OFFICIAL TELEGRAM CHANNEL
@@ -250,22 +259,22 @@ hr {
 
     <!-- DESCRIPTION -->
     <div class="description">
-        Market Analysis <span class="dot">◆</span> Trading<br>
+        Market Analysis <span class="dot">◆</span> Trading
+        <br>
         Education
     </div>
 
-    <!-- JOIN -->
     <div class="join-text">
         Tap below to join
     </div>
 
+    <!-- TELEGRAM BUTTON -->
     <a href="https://t.me/+cG_u_6iyVdBjNDc1"
        class="join-btn"
-       id="joinButton"
-       target="_blank">
+       id="joinButton">
 
-        <span class="telegram-icon">➤</span>
-        Join Telegram
+       <span class="telegram-icon">➤</span>
+       Join Telegram
 
     </a>
 
@@ -276,14 +285,14 @@ hr {
 
     <!-- FEATURES -->
     <div class="features">
-        <div class="feature">✓ Click to join</div>
-        <div class="feature">✓ No spam</div>
-        <div class="feature">✓ Unsubscribe anytime</div>
+        <div class="feature">Click to join</div>
+        <div class="feature">No spam</div>
+        <div class="feature">Unsubscribe anytime</div>
     </div>
 
-    <!-- FOOTER -->
     <hr>
 
+    <!-- FOOTER -->
     <div class="footer">
         <p>© 2026 The Bulls Paradise · Powered by Telegram</p>
         <p>Trading involves risk. Educational content only.</p>
@@ -297,16 +306,13 @@ let seconds = 55;
 const timer = document.getElementById("timer");
 const joinButton = document.getElementById("joinButton");
 
-const countdown = setInterval(function() {
+const countdown = setInterval(() => {
 
     seconds--;
-
     timer.textContent = seconds + "s";
 
-    if(seconds <= 0) {
+    if (seconds <= 0) {
         clearInterval(countdown);
-        timer.textContent = "Redirecting...";
-
         window.location.href = joinButton.href;
     }
 
